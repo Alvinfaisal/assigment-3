@@ -14,7 +14,7 @@ async function getItems() {
     return [
       {
         id: 1,
-        title: Dummy,
+        title: "Dummy",
         ispacked: true,
       },
     ];
