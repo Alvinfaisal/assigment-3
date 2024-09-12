@@ -22,7 +22,11 @@ async function getItems() {
 }
 
 export default async function Page() {
-  const { data } = await getItems();
+  const res = await fetch("https://v1.appbackend.io/v1/rows/8xh8N0sWAO0Y", {
+    cache: "no-store",
+  });
+
+  const { data } = await res.json();
   console.log(data);
 
   return (
